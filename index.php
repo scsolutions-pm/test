@@ -48,7 +48,7 @@ if (defined('ENVIRONMENT'))
 
 /*
  *---------------------------------------------------------------
- * SYSTEM FOLDER NAME
+ * SYSTEM FOLDER NAME T
  *---------------------------------------------------------------
  *
  * This variable must contain the name of your "system" folder.
