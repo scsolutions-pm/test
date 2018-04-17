@@ -1,0 +1,396 @@
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+ height: 100px;
+    padding: 15px;
+    width: 309px;
+	}
+
+
+/*************************
+EXAMPLES 2-7 BELOW 
+**************************/
+
+/* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+}
+
+.navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	-webkit-transform: translate(0,-50%);
+	        transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-default {
+    background-color: #f8f8f800;
+    border-color: #e7e7e700;
+}
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+.center-logo{
+	text-align:center;
+}
+.center-logo img {
+	width:100%;
+}
+.gallery-slider h3{
+	text-align:center;
+	    font-weight: bold;
+}
+/* Removes the default 20px margin and creates some padding space for the indicators and controls */
+.carousel {
+    margin-bottom: 0;
+	padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+	       left: -7%;
+    top: 23%;
+    color: #000;
+    font-size: 75px;
+    right: -7% !important;
+}
+.thumbnail a>img, .thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+.carousel-control.right{
+	    background-color: transparent !important;
+    background-image: none !important;
+}
+.carousel-control.left{
+	    background-color: transparent !important;
+    background-image: none !important;
+}
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+.heading{
+	    text-align: center;
+    margin-bottom: 34px;
+    font-weight: bold;
+    color: #fa7a27;
+}
+.more-info{
+	text-align:center;
+}
+.pera{
+	    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+	background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+footer{
+	    background-color: #43474d;
+    color: #fff;
+    padding: 24px 14px 10px 36px;
+    margin-top: 17px;
+}
+
+
+
+
+label {
+  cursor: pointer;
+}
+label input[type="checkbox"] {
+  display: none;
+}
+label input[type="checkbox"] + .label-text:before {
+      display: inline-block;
+    transition: all 0.2s ease-in-out;
+    margin: -6px 15px 0 0;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    background: #ecf0f1;
+    border: 2px solid #f77923;
+    border-radius: 5px;
+    color: #ecf0f1;
+    content: "";
+}
+label input[type="checkbox"]:checked + .label-text:before {
+      background: #3498db;
+    text-align: center;
+    line-height: 1.3em;
+    color: #ecf0f1;
+    content: "✔";
+    font-size: 14px;
+}
+
+.gap{
+height:100px;
+}
+.filter li{
+	   list-style-type: none;
+    margin-bottom: 7px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.filter{
+	    height: 164px;
+    overflow-y: scroll;
+}
+.filter-result{
+	  height: 464px;
+    overflow-y: scroll;
+}
+.filter1 li{
+	    list-style-type: none;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+.filter-head{
+	    margin-left: 39px;
+    margin-top: 24px;
+    margin-bottom: 22px;
+    color: #50b1d6;
+}
+
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.fa-search{
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
+	}
+	.search{
+		    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+	
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	}
+	.search::before{
+		     content: "\f002";
+    position: absolute;
+    right: 3%;
+    top: 1%;
+	}
+
+
+.filter-result{
+	text-align:center;
+}
+
+.img-replace {
+  /* replace text with an image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%; 
+  color: transparent;
+  white-space: nowrap;
+}
+.bts-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.bts-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.bts-popup-container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 4em auto;
+  background: #a0cff1;
+  border-radius: none; 
+  text-align: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+      height: 35%;
+}
+.bts-popup-container img {
+  padding: 20px 0 0 0;
+}
+.bts-popup-container p {
+	color: white;
+  padding: 10px 40px;
+}
+.bts-popup-container .bts-popup-button {
+  padding: 5px 25px;
+  border: 2px solid white;
+	display: inline-block;
+  margin-bottom: 10px;
+}
+
+.bts-popup-container a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+.bts-popup-container .bts-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+.bts-popup-container .bts-popup-close::before, .bts-popup-container .bts-popup-close::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 16px;
+  height: 3px;
+  background-color: white;
+}
+.bts-popup-container .bts-popup-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 8px;
+}
+.bts-popup-container .bts-popup-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 13px;
+}
+.is-visible .bts-popup-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (min-width: 1170px) {
+  .bts-popup-container {
+    margin: 8em auto;
+  }
+}
+.detail-area ul li{
+	float: none;
+    font-size: 16px;
+    margin-top: 12px;
+    list-style-type: decimal;
+    font-weight: bold;
+}
+.next-link li{
+	list-style-type: none !important;
+    float: left !important;
+    margin-right: 18px;
+    background: #fe7a19;
+    color: #fff;
+    padding: 8px;
+}
+.bold{
+	    font-weight: bold;
+}
+.renge-img{
+	    margin-top: 7px;
+    width: 282px;
+    margin-left: -11px;
+}
+.fix-logo{
+	    display: block !important;
+    position: fixed;
+    z-index: 9;
+    width: 213px !important;
+    height: 75px !important;
+    margin-top: -13px;
+}
+.fix-header {
+    position: fixed;
+    width: 85%;
+    z-index: 9999;
+    background: #cccccc !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+    border-radius: 50%;
+}
